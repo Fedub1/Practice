@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meck Biking Buddy</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAnMgdCdZHfBYWb1ASE4k7mQrvSwKK3Es&callback=initMap&libraries=&v=weekly" defer></script>
+        <script src="https://kit.fontawesome.com/b32fc24145.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav class="top-bar wrap">
+                <span class="top-bar-left">
+                    <a href="index.html">
+                    <img src="assets/images/meckbikingbuddylogo.png" alt="meck biking buddy" id="mbb-logo" height="40px">
+                    </a>
+                </span>
+                <ul class="top-bar-right">
+                    <li>
+                        <div id="weather">
+                            <div id="temp"></div>
+                            <div id="description"></div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a class="navbar-item" href="#">My Rides</a></li>
+                    <li class="divider"></li>
+                    <li><a class="navbar-item" href="#">My Reviews</a></li>
+                    <li class="divider"></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <main id="main-content" class="container"></main>
+
+            <section class="accordion" data-accordion data-allow-all-closed="true">
+                <div class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">FILTER TRAILS</a>
+                    <div class="accordion-content" data-tab-content>
+                        <div class="grid-x grid-padding-x">      
+                            <fieldset class="large-4 cell">
+                                <legend>DISTANCE</legend>
+                                <input class="checkbox" id="dischbox1" type="checkbox"><label for="dischbox1">Any</label><br>
+                                <input class="checkbox" id="dischbox2" type="checkbox"><label for="dischbox2">1-5 mi.</label><br>
+                                <input class="checkbox" id="dischbox3" type="checkbox"><label for="dischbox3">5-10 mi.</label><br>
+                                <input class="checkbox" id="dischbox4" type="checkbox"><label for="dischbox4">10+ mi.</label>
+                            </fieldset>
+                            <fieldset class="large-4 cell">
+                                <legend>POPULARITY</legend>
+                                <input class="checkbox" id="popchbox1" type="checkbox"><label for="popchbox1">Any</label><br>
+                                <input class="checkbox" id="popchbox2" type="checkbox"><label for="popchbox2">Low</label><br>
+                                <input class="checkbox" id="popchbox3" type="checkbox"><label for="popchbox3">Medium</label><br>
+                                <input class="checkbox" id="popchbox4" type="checkbox"><label for="popchbox4">High</label>
+                            </fieldset>
+                            <fieldset class="large-4 cell">
+                                <legend>RATING</legend>
+                                <input class="checkbox" id="ratchbox1" type="checkbox"><label for="ratchbox1">Any</label><br>
+                                <input class="checkbox" id="ratchbox2" type="checkbox"><label for="ratchbox2">2 Stars & Below</label><br>
+                                <input class="checkbox" id="ratchbox3" type="checkbox"><label for="ratchbox3">3 Stars & Up</label><br>
+                                <input class="checkbox" id="ratchbox4" type="checkbox"><label for="ratchbox4">4 Stars & Up</label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+                    
+            </section> 
+
+            <section id="map-container" class="container">
+                <div id="map" class="map"></div>
+            </section>
+
+            <section class="accordion" data-accordion data-allow-all-closed="true">
+                <div class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">TRAILS INFO</a>
+                    <div class="accordion-content" data-tab-content>
+                        <div class="grid-x grid-padding-x">      
+                            <div id="localTrails"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+
+        </main>
+
+        <br><hr>
+        <footer>
+        August 2020 - Made by Adam, Camilo, and Felicia
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAnMgdCdZHfBYWb1ASE4k7mQrvSwKK3Es&callback=init"></script>
+        <script type="text/javascript">
+            $(document).foundation();
+        </script>
+        <script src="assets/js/script.js"></script>
+                
+        
+    </body>
+</html>
